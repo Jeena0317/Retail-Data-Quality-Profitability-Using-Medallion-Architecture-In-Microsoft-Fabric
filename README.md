@@ -1,36 +1,31 @@
 Retail Data Engineering Pipeline using Medallion Architecture (Microsoft Fabric)
 📌 Project Overview
 
-This project demonstrates an end-to-end data engineering pipeline using Microsoft Fabric and PySpark, implementing the Medallion Architecture (Bronze, Silver, Gold layers).
+This project demonstrates an end-to-end data engineering pipeline using Microsoft Fabric and PySpark.
 
-The pipeline processes raw retail data, performs data cleaning and transformation, and generates business-ready insights such as revenue, return rate, and profitability.
+It implements the Medallion Architecture (Bronze, Silver, Gold layers) to process raw retail data and generate business insights.
 
 🏗️ Architecture
-Bronze Layer
-Raw data ingestion from source (CSV/JSON/API) without transformations
-Silver Layer
-Data cleaning and transformation:
+🔹 Bronze Layer
+Raw data ingestion from source (CSV / JSON / API)
+No transformations applied
+🔹 Silver Layer
+Data cleaning and transformation
 Standardized column names
 Handled missing values
 Converted data types
 Cleaned currency, dates, and text fields
 Removed duplicates
-Gold Layer
-Business-level aggregations:
-Total Orders
-Unique Customers
-Total Revenue
-Return Rate (%)
-Average Order Value
-Profitability Metrics
+🔹 Gold Layer
+Business-level aggregations
+Generated KPIs for reporting and analytics
 ⚙️ Technologies Used
 Microsoft Fabric
 PySpark
 Delta Lake
 SQL
-Data Modeling
 📂 Datasets Used
-Orders Data (CSV/JSON)
+Orders Data
 Inventory Data
 Returns Data
 🔄 Pipeline Flow
@@ -42,8 +37,8 @@ Store results as Delta tables
 Implemented Medallion Architecture
 Built scalable ETL pipeline using PySpark
 Handled inconsistent data formats (dates, currency, text)
-Performed data validation and deduplication
-Generated business KPIs for analytics
+Performed data cleaning and deduplication
+Generated business KPIs
 📈 Sample KPIs
 Total Revenue
 Total Orders
@@ -51,20 +46,20 @@ Return Rate (%)
 Average Order Value
 Net Profit
 🚀 How to Run
-Upload datasets to Microsoft Fabric Lakehouse
-Run Bronze layer ingestion notebook
-Run Silver layer cleaning notebooks
-Run Gold layer aggregation notebook
-Query final tables for insights
+Upload datasets to Fabric Lakehouse
+Run Bronze layer notebook
+Run Silver layer notebook
+Run Gold layer notebook
+Query the final tables
 🎯 Project Outcome
-Built a complete data pipeline from raw data to insights
+Built end-to-end data pipeline
 Improved data quality and consistency
-Enabled business reporting using structured data
+Enabled business insights using structured data
 📌 Future Improvements
 Add real-time data ingestion
 Implement SCD Type 2
 Build Power BI dashboard
-Optimize pipeline for large-scale data
+Optimize pipeline performance
 👤 Author
 
 Jeena Paul
